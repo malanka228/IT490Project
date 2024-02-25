@@ -1,16 +1,29 @@
 <html> 
+  <head>
+    <title>Register</title>
+  </head>
   <link rel="stylesheet" href="style.css">
   <div class="topnav">
     <a href="index.html">Home</a>
     <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
   </div>
-<div class="log-form">
-  <h2>Login to your account</h2>
-  <form>
-    <input type="text" title="username" placeholder="username" />
-    <input type="password" title="username" placeholder="password" />
-    <button type="submit" class="btn">Login</button>
-    <a class="forgot" href="#">Forgot Username?</a>
+<div class="reg-form">
+  <h2>Registration Form</h2>
+  <form action="register.php" method="post">
+    <label for="username">Username:</label> 
+    <input id="username" name="username" required type="text" />
+    <label for="firstName">First Name:</label> 
+    <input id="firstName" name="firstName" required type="text" />
+    <label for="lastName">Last Name:</label> 
+    <input id="lastName" name="lastName" required type="text" />
+    <label for="password">Password:</label>
+    <input id="password" name="password" required type="password" />
+    <label for="browser">Browser session:</label> 
+    <input id="browser" name="browser" required type="text" />
+    <label for="lastLogin">Login:</label> 
+    <input id="lastLogin" name="lastLogin" required type="" />
+    <input name="register" type="submit" value="Register" />
   </form>
-</div><!--end log form -->
+</div><!--end reg form -->
 </html>

@@ -1,16 +1,21 @@
 <html> 
+  <head>
+    <title>Login</title>
+  </head>
   <link rel="stylesheet" href="style.css">
   <div class="topnav">
     <a href="index.html">Home</a>
     <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
   </div>
 <div class="log-form">
-  <h2>Login to your account</h2>
-  <form method="POST" action="" id="loginForm">
-    <input type="text" id="username" title="username" placeholder="username" required />
-    <input type="password" id="password" title="username" placeholder="password" required />
-    <button type="submit" id="submit" class="btn">Login</button>
-    <a class="forgot" href="#">Forgot Username?</a>
+  <h2>Login Form</h2>
+  <form method="POST" action="login.php">
+    <label for="username">Username:</label> 
+    <input type="text" id="username" name="username" required />
+    <label for="password">Password:</label> 
+    <input type="password" id="password" name="password" required />
+    <input name="login" type="submit" value="Login" />
   </form>
 </div><!--end log form -->
 </html>

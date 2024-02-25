@@ -3,7 +3,6 @@
     overflow: hidden;
   }
   
-  /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
     color: #f2f2f2;
@@ -14,14 +13,37 @@
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   
-  /* Change the color of links on hover */
   .topnav a:hover {
     background-color: #ddd;
     color: black;
   }
   
-  /* Add a color to the active/current link */
   .topnav a.active {
     background-color: #04AA6D;
     color: white;
   }
+
+.reg-form label, .log-form label{
+  display: inline-block;
+  width: 100px;
+  margin-bottom: 8px;
+}
+.reg-form h2, .log-form h2 {
+  text-align: center;
+}
+.reg-form input, .log-form input {
+  display: inline-block;
+  width: calc(100% - 110px);
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.reg-form input[name="register"], .log-form input[name="login"] {
+  display: block;
+  margin: 0 auto;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 4px;
+}

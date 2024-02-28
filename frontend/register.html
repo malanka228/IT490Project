@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html> 
   <head>
     <title>Register</title>
@@ -8,7 +9,9 @@
     <a href="login.html">Login</a>
     <a href="register.html">Register</a>
   </div>
+  <div id='exist'></div>
 <div class="reg-form">
+  <div id='exist' style="color: green" hidden>You were registered successfuly!</div>
   <h2>Registration Form</h2>
   <form action="register.php" method="post">
     <label for="username">Username:</label> 
@@ -19,11 +22,20 @@
     <input id="lastName" name="lastName" required type="text" />
     <label for="password">Password:</label>
     <input id="password" name="password" required type="password" />
-    <label for="browser">Browser session:</label> 
-    <input id="browser" name="browser" required type="text" />
-    <label for="lastLogin">Login:</label> 
-    <input id="lastLogin" name="lastLogin" required type="" />
     <input name="register" type="submit" value="Register" />
   </form>
+  <script>
+      const url = new URLSearchParams(window.location.search);
+      const message = url.get('message');
+      if(message === 'UsernameAlreadyExists'){
+        var msg = document.getElementById('exist');
+        msg.innerHTML = "Username already exists! Try something different!";
+        msg.style.color = "red";
+      }
+      else{
+        var msg = document.getElementById('exist');
+        msg.removeAttribute('hidden');
+      }
+    </script>
 </div><!--end reg form -->
 </html>

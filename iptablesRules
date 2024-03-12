@@ -2,3 +2,7 @@ sudo ufw default deny incoming
 sudo ufw default deny outgoing
 sudo ufw allow 5672/tcp
 sudo ufw allow 15672/tcp
+sudo ufw deny 8080/tcp
+sudo ufw deny 80/tcp
+sudo ufw deny out 80/tcp
+sudo ufw deny 23/tcp

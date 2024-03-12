@@ -1,0 +1,4 @@
+sudo ufw default deny incoming 
+sudo ufw default deny outgoing
+sudo ufw allow 5672/tcp
+sudo ufw allow 15672/tcp

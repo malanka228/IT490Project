@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Notifications</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+      <div class="topnav-right">
+		<a href="notification.html">Notifications</a>
+        <a href="wishlist.html">Wishlist</a>
+      </div>
+    </div>
+
+    <h1>Notifications</h1>
+
+    <form action="process_notifications.php" method="post">
+      <label for="notificationCheckbox">Turn on notifications for wishlist:</label>
+      <input type="checkbox" id="notificationCheckbox" name="notifications" value="on">
+      <br>
+      <input type="submit" value="Save">
+    </form>
+  </body>
+</html>

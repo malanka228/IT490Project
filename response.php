@@ -11,7 +11,7 @@ function doRegister($firstName, $lastName, $password, $username)
     $lastName = sanitize($lastName);
     $password = sanitize($password);
     $username = sanitize($username);
-    $mydb = new mysqli('127.0.0.1', 'testUser', '12345', 'testdb');
+    $mydb = new mysqli('10.144.1.228', 'project', '12345', 'testdb');
     if ($mydb->errno != 0) {
         echo "failed to connect to database: " . $mydb->error . PHP_EOL;
         return array("returnCode" => '0', 'message' => "Database is not connected");
@@ -43,7 +43,7 @@ function doRegister($firstName, $lastName, $password, $username)
 function doLogin($username, $password){
   $username = sanitize($username);
   $password = sanitize($password);
-  $mydb = new mysqli('127.0.0.1', 'testUser', '12345', 'testdb');
+  $mydb = new mysqli('10.144.1.228', 'project', '12345', 'testdb');
   if ($mydb->errno != 0) {
     echo "failed to connect to database: " . $mydb->error . PHP_EOL;
       return array("returnCode" => '0', 'message' => "Database is not connected");
@@ -77,7 +77,7 @@ function doLogin($username, $password){
 }
 function doLogout($username){
     $username = sanitize($username);
-    $mydb = new mysqli('127.0.0.1', 'testUser', '12345', 'testdb');
+    $mydb = new mysqli('10.144.1.228', 'project', '12345', 'testdb');
     if ($mydb->errno != 0) {
     echo "failed to connect to database: " . $mydb->error . PHP_EOL;
       return array("returnCode" => '0', 'message' => "Database is not connected");
@@ -92,7 +92,7 @@ function doLogout($username){
 
 }
 function sanitize($input) {
-    $mydb = new mysqli('127.0.0.1', 'testUser', '12345', 'testdb');
+    $mydb = new mysqli('10.144.1.228', 'project', '12345', 'testdb');
     if ($mydb->connect_error) {
         die("Connection failed: " . $mydb->connect_error);
     }

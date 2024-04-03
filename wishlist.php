@@ -19,6 +19,7 @@ if(isset($_SESSION['jwtToken']) && !empty($_SESSION['jwtToken'])){
         echo "<a href='notifications.php'>Notifications</a>";
         echo "<a href='reviews.php'>Reviews</a>";
         echo "<a href='wishlist.php'>Wishlist</a>";
+        echo "<a href='compare.php'>Compare</a>";
         echo "<a href='recommendation.php'>Recommendation</a>";
         echo "</div>";
         echo "</div>";

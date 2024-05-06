@@ -1,0 +1,233 @@
+.topnav {
+  background-color: grey;
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.topnav-right {
+	 float: right;
+}
+.create-list-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+	  
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+.form-group input[type="text"], .form-group select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.reg-form label, .log-form label{
+  display: inline-block;
+  width: 100px;
+  margin-bottom: 8px;
+}
+.reg-form h2, .log-form h2 {
+  text-align: center;
+}
+.reg-form input, .log-form input {
+  display: inline-block;
+  width: calc(100% - 110px);
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.reg-form input[name="register"], .log-form input[name="login"] {
+  display: block;
+  margin: 0 auto;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+.back-button {
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+.back-button a{
+  display: inline-block;
+  padding: 10px;
+  background-color: #04AA6D;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.back-button a:hover {
+  background-color: #008C5A;
+}
+.product-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.product-container img {
+  max-width: 150px;
+  border: 2px solid #ccc;
+  margin-bottom: 10px;
+}
+.product-details {
+  font-size: 16px;
+  margin-top: 10px;
+}
+.product-search {
+  text-align: center;
+  margin-top: 20px;
+}
+.product-search label {
+  display: block;
+  margin-bottom: 8px;
+}
+.product-search input[type="text"],
+.product-search input[type="submit"] {
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+img {
+  max-width: 150px;
+  border: 2px solid #ccc;
+  margin-bottom: 10px;
+}
+.btn-submit-review {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+.btn-remove {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+#review form{
+  margin-bottom: 10px;
+}
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.review {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.review h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.review p {
+    margin: 5px 0;
+}
+
+.timestamp {
+    color: #777;
+    font-size: 0.9em;
+}
+.comparison-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-cont {
+    width: 45%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.product-cont img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px 5px 0 0;
+}
+
+.product-det {
+    padding: 10px;
+}
+
+.product-det b {
+    display: block;
+}
+
+.product-det a {
+    color: blue;
+    text-decoration: none;
+}
+
+.product-det a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .product-cont {
+        width: 100%;
+    }
+}
